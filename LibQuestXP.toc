@@ -8,7 +8,7 @@
 ## LoadOnDemand: 0
 # SavedVariables: QuestRecordGlobalDB
 
-LibStub\LibStub.lua
+libs\LibStub\LibStub.lua
 
 LibQuestXPDB.lua
 LibQuestXP.lua
