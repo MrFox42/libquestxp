@@ -1,0 +1,9 @@
+externals:
+    libs/LibStub:
+        url: https://repos.wowace.com/wow/libstub/trunk
+
+enable-nolib-creation: no
+
+manual-changelog:
+    filename: CHANGELOG.md
+    markup-type: markdown
