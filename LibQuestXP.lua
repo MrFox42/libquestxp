@@ -23,12 +23,25 @@ end
 function LibQuestXP:GetAdjustedXP(xp, qLevel)
     local charLevel = UnitLevel("player");
 
-    if (charLevel <= qLevel + 5)  then return xp end;
-    if (charLevel == qLevel + 6)  then return floor(xp * 0.8 / 5) * 5 end
-    if (charLevel == qLevel + 7)  then return floor(xp * 0.6 / 5) * 5 end
-    if (charLevel == qLevel + 8)  then return floor(xp * 0.4 / 5) * 5 end
-    if (charLevel == qLevel + 9)  then return floor(xp * 0.2 / 5) * 5 end
-    if (charLevel >= qLevel + 10) then return floor(xp * 0.1 / 5) * 5 end
+    local diffFactor = 2 * (qLevel - charLevel) + 20;
+    if (diffFactor < 1) then
+        diffFactor = 1;
+    elseif (diffFactor > 10) then
+        diffFactor = 10;
+    end
+
+    xp = xp * diffFactor / 10;
+    if (xp <= 100) then
+        xp = 5 * floor((xp + 2) / 5);
+    elseif (xp <= 500) then
+        xp = 10 * floor((xp + 5) / 10);
+    elseif (xp <= 1000) then
+        xp = 25 * floor((xp + 12) / 25);
+    else
+        xp = 50 * floor((xp + 25) / 50);
+    end
+
+    return xp;
 end
 
 function GetQuestLogRewardXP(questID)
