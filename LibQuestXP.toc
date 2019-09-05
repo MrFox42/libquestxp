@@ -2,13 +2,10 @@
 ## Title: LibQuestXP
 ## Author: MrFox
 ## Email: gyussz@live.com
-## Version: 1.0.2
+## Version: 1.0.3
 ## Notes: Records quest events
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 # SavedVariables: QuestRecordGlobalDB
 
-libs\LibStub\LibStub.lua
-
-LibQuestXPDB.lua
-LibQuestXP.lua
+LibQuestXP.xml

@@ -3,7 +3,7 @@ local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not LibQuestXP then
     return	-- already loaded and no upgrade necessary
-  end
+end
 
 local selectedQuestLogIndex = nil
 
@@ -62,5 +62,6 @@ function GetQuestLogRewardXP(questID)
     if qLevel == nil then return xp end
 
     -- Return adjusted XP if all information are available
+    -- print(questID, title, xp, LibQuestXP:GetAdjustedXP(xp, qLevel)); -- Debug
     return LibQuestXP:GetAdjustedXP(xp, qLevel)
 end
