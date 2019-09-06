@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibQuestXP-1.0", 1
+local MAJOR, MINOR = "LibQuestXP-1.0", 4
 local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not LibQuestXP then
@@ -22,6 +22,9 @@ end
 
 function LibQuestXP:GetAdjustedXP(xp, qLevel)
     local charLevel = UnitLevel("player");
+    if (charLevel == 60) {
+        return 0;
+    }
 
     local diffFactor = 2 * (qLevel - charLevel) + 20;
     if (diffFactor < 1) then
