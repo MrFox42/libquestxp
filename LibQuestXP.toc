@@ -3,7 +3,7 @@
 ## Author: MrFox
 ## Email: gyussz@live.com
 ## Version: 1.0.4
-## Notes: Library that Reimplements GetQuestLogRewardXP for Classic WoW and provides XP reward information for all Quests
+## Notes: Library that re-implements GetQuestLogRewardXP for Classic WoW and provides XP reward information for all quests
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 
