@@ -22,9 +22,9 @@ end
 
 function LibQuestXP:GetAdjustedXP(xp, qLevel)
     local charLevel = UnitLevel("player");
-    if (charLevel == 60) {
+    if (charLevel == 60) then
         return 0;
-    }
+    end
 
     local diffFactor = 2 * (qLevel - charLevel) + 20;
     if (diffFactor < 1) then
