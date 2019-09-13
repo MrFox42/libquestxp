@@ -1,5 +1,9 @@
 ## LibQuestXP - Changelog
 
+**1.0.5**
+
+- Added more quests
+
 **1.0.4**
 
 - Return 0 as adjusted XP if the character is level 60

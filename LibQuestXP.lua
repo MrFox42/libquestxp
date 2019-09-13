@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibQuestXP-1.0", 4
+local MAJOR, MINOR = "LibQuestXP-1.0", 5
 local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not LibQuestXP then
