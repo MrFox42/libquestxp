@@ -1,5 +1,9 @@
 ## LibQuestXP - Changelog
 
+**1.0.6**
+
+- Updated quest XP data
+
 **1.0.5**
 
 - Added more quests

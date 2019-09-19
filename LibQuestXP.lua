@@ -1,8 +1,8 @@
-local MAJOR, MINOR = "LibQuestXP-1.0", 5
+local MAJOR, MINOR = "LibQuestXP-1.0", 6
 local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not LibQuestXP then
-    return	-- already loaded and no upgrade necessary
+    return -- already loaded and no upgrade necessary
 end
 
 local selectedQuestLogIndex = nil
