@@ -1,3 +1,7 @@
+if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then
+    return -- Don't load for Retail
+end
+
 LibQuestXPDB = {
     [1] = {["xp"] = 540, ["level"] = 4},
     [2] = {["xp"] = 2450, ["level"] = 30},

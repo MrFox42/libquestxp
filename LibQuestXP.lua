@@ -1,5 +1,9 @@
-local MAJOR, MINOR = "LibQuestXP-1.0", 6
+local MAJOR, MINOR = "LibQuestXP-1.0", 7
 local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
+
+if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then
+    return -- Don't load for Retail
+end
 
 if not LibQuestXP then
     return -- already loaded and no upgrade necessary

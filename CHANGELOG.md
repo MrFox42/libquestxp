@@ -1,5 +1,9 @@
 ## LibQuestXP - Changelog
 
+**1.0.7**
+
+- No longer loads on Retail
+
 **1.0.6**
 
 - Updated quest XP data
