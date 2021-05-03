@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibQuestXP-2.0", 1
+local MAJOR, MINOR = "LibQuestXP-2.0", 2
 local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
 
 if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then
@@ -26,7 +26,7 @@ end
 
 function LibQuestXP:GetAdjustedXP(xp, qLevel)
     local charLevel = UnitLevel("player");
-    if (charLevel == 60) then
+    if (charLevel == 70) then
         return 0;
     end
 
