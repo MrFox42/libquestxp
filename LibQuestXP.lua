@@ -52,7 +52,7 @@ function LibQuestXP:GetAdjustedXP(xp, qLevel)
 end
 
 function GetQuestLogRewardXP(questID)
-    local title, qLevel, xp
+    local title, qLevel, xp, _
 
     -- Try getting the quest from the quest log if no questID was provided
     if questID == nil and selectedQuestLogIndex ~= nil then
