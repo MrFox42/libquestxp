@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibQuestXP-1.0", 7
+local MAJOR, MINOR = "LibQuestXP-1.0", 8
 local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
 
 if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then
@@ -30,6 +30,8 @@ function LibQuestXP:GetAdjustedXP(xp, qLevel)
         return 0;
     end
 
+
+
     local diffFactor = 2 * (qLevel - charLevel) + 20;
     if (diffFactor < 1) then
         diffFactor = 1;
@@ -46,6 +48,15 @@ function LibQuestXP:GetAdjustedXP(xp, qLevel)
         xp = 25 * floor((xp + 12) / 25);
     else
         xp = 50 * floor((xp + 25) / 50);
+    end
+
+    if C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfMastery) then
+        local roundFactor = 50;
+        if xp < 1000 then
+            roundFactor = 10;
+        end
+
+        xp = floor(xp / roundFactor + 0.5) * roundFactor * 1.4;
     end
 
     return xp;
