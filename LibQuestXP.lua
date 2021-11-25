@@ -48,7 +48,7 @@ function LibQuestXP:GetAdjustedXP(xp, qLevel)
         xp = 50 * floor((xp + 25) / 50);
     end
 
-    if C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfMastery) then
+    if C_Seasons ~= nil and C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() == Enum.SeasonID.SeasonOfMastery) then
         local roundFactor = 50;
         if xp < 1000 then
             roundFactor = 10;
