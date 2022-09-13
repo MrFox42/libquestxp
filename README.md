@@ -6,6 +6,8 @@ In Classic WoW the ```GetQuestLogRewardXP``` lua function was removed, and there
 
 **Important:** This is not a standalone addon! If you're **not** a developer, this addon is probably no use to you.
 
+**Important:**: This lib currently returns the base XP values without any buffs (like the 50% Joyous Journeys), so please handle XP boost buffs in your addon. If you have any issues, feel free to contact me.
+
 ## Usage
 
 LibQuestXP uses [LibStub](https://www.wowace.com/projects/libstub "LibStub") like many other libraries. If you want to embed it in your addon, please use ```LibQuestXP.xml```, which should load all necessary files.

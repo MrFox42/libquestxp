@@ -1,5 +1,9 @@
 ## LibQuestXP - Changelog
 
+**3.0.1**
+
+- WotLK release
+
 **2.0.3**
 
 - Global _ taint fix
