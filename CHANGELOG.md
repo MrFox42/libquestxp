@@ -1,5 +1,9 @@
 ## LibQuestXP - Changelog
 
+**3.0.2**
+
+- Updated for the Ulduar patch
+
 **3.0.1**
 
 - WotLK release

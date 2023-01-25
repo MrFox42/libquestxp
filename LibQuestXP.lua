@@ -1,4 +1,4 @@
-local MAJOR, MINOR = "LibQuestXP-3.0", 1
+local MAJOR, MINOR = "LibQuestXP-3.0", 2
 local LibQuestXP = LibStub:NewLibrary(MAJOR, MINOR)
 
 if _G.WOW_PROJECT_ID == _G.WOW_PROJECT_MAINLINE then
