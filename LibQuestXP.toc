@@ -1,8 +1,8 @@
-## Interface: 11404
+## Interface: 11500
 ## Title: LibQuestXP
 ## Author: MrFox
 ## Email: gyussz@live.com
-## Version: 1.0.10
+## Version: 1.0.11
 ## Notes: Library that re-implements GetQuestLogRewardXP for Classic WoW and provides XP reward information for all quests
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
