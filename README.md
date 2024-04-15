@@ -10,7 +10,7 @@ In Classic WoW the ```GetQuestLogRewardXP``` lua function was removed, and there
 
 ## Usage
 
-LibQuestXP uses [LibStub](https://www.wowace.com/projects/libstub "LibStub") like many other libraries. If you want to embed it in your addon, please use ```LibQuestXP.xml```, which should load all necessary files.
+LibQuestXP uses [LibStub](https://www.wowace.com/projects/libstub "LibStub") like many other libraries. If you want to embed it in your addon, ```LibQuestXP-Classic.xml``` or ```LibQuestXP-WOTLKC.xml```, which should load all necessary files.
 
 ### Utilizing GetQuestLogRewardXP
 

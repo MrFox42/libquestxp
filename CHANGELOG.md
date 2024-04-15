@@ -1,5 +1,9 @@
 ## LibQuestXP - Changelog
 
+**3.1.1**
+
+- Merged versions, updated DBs
+
 **3.0.2**
 
 - Updated for the Ulduar patch
