@@ -75,39 +75,39 @@ function GetQuestLogRewardXP(questID)
     return LibQuestXP:GetAdjustedXP(xp, qLevel)
 end
 
-local f = CreateFrame("Frame")
-f:RegisterEvent("GLOBAL_MOUSE_DOWN")
-f:RegisterEvent("PLAYER_STARTED_MOVING")
-f:RegisterEvent("AUTOFOLLOW_BEGIN")
-f:RegisterEvent("UNIT_AURA")
-
-f:SetScript("OnEvent", function(self, event, val, info)
-
-    if not inited then
-        for i = 1, 40 do
-            local _, _, _, _, _, _, _, _, _, buffSpellId = UnitBuff("player", i)
-            if not buffSpellId then
-                return
-            end
-
-            -- Joyous Journeys
-            if buffSpellId == 377749 then
-                multiplier = 1.5
-                break
-            end
-
-            -- Discoverer's Delight
-            if buffSpellId == 436412 then
-                multiplier = 2
-                break
-            end
-        end
-
-        inited = true
-        f:UnregisterEvent("GLOBAL_MOUSE_DOWN")
-        f:UnregisterEvent("PLAYER_STARTED_MOVING")
-        f:UnregisterEvent("AUTOFOLLOW_BEGIN")
-        f:UnregisterEvent("UNIT_AURA")
-    end
-
-end)
+-- local f = CreateFrame("Frame")
+-- f:RegisterEvent("GLOBAL_MOUSE_DOWN")
+-- f:RegisterEvent("PLAYER_STARTED_MOVING")
+-- f:RegisterEvent("AUTOFOLLOW_BEGIN")
+-- f:RegisterEvent("UNIT_AURA")
+--
+-- f:SetScript("OnEvent", function(self, event, val, info)
+--
+--     if not inited then
+--         for i = 1, 40 do
+--             local _, _, _, _, _, _, _, _, _, buffSpellId = UnitBuff("player", i)
+--             if not buffSpellId then
+--                 return
+--             end
+--
+--             -- Joyous Journeys
+--             if buffSpellId == 377749 then
+--                 multiplier = 1.5
+--                 break
+--             end
+--
+--             -- Discoverer's Delight
+--             if buffSpellId == 436412 then
+--                 multiplier = 2
+--                 break
+--             end
+--         end
+--
+--         inited = true
+--         f:UnregisterEvent("GLOBAL_MOUSE_DOWN")
+--         f:UnregisterEvent("PLAYER_STARTED_MOVING")
+--         f:UnregisterEvent("AUTOFOLLOW_BEGIN")
+--         f:UnregisterEvent("UNIT_AURA")
+--     end
+--
+-- end)
