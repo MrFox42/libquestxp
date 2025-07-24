@@ -1,5 +1,6 @@
 ## Interface: 11502
 ## Title: LibQuestXP
+## X-Curse-Project-ID: 339843
 ## Author: MrFox
 ## Email: gyussz@live.com
 ## Version: 5.0.16
