@@ -1,5 +1,9 @@
 ## LibQuestXP - Changelog
 
+**5.0.16**
+
+- Added support for MoP Classic
+
 **3.1.1**
 
 - Merged versions, updated DBs
